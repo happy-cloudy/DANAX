@@ -82,12 +82,7 @@ async def on_message(message):
             await client.send_message(message.channel, "님은 보, DANAX는 " + r + "를 선택했다..." + "\n님이 이겼다 ㅠ")
 
     if message.content==(fr + '도움'):
-       embed = discord.Embed(title="DANAX 도움말", description="**~다낙스**:가벼운 인사를 건넵니다.\n**~버전**:DANAX의 버전을 알려줍니다.\n**~가위/바위/보**:DANAX와 가위바위보를 합니다.\n**~열대저기압**:현재 활동 중인 열대저기압 정보를 알려줍니다.\n**~주사위**:주사위를 굴립니다.\n**~확률**:확률을 랜덤으로 알려줍니다.(값이 백분율로 나오지 않습니다.)\n**~핑**:반응속도를 알려줍니다.\n**~음악 도움**:음악 봇 도움말을 알려줍니다.", color=0x00faf4)
-       await client.send_message(message.channel, embed=embed)
-
-
-    if message.content==(fr + '음악 도움'):
-       embed = discord.Embed(title="DANAX 음악 도움말", description="**~재생 (링크)**:링크의 곡을 재생합니다.\n**~스킵**:현재 재생 중인 곡을 건너뜁니다.\n**~중지**:현재 재생 중인 곡을 중지합니다.", color=0x00faf4)
+       embed = discord.Embed(title="DANAX 도움말", description="**~다낙스**:가벼운 인사를 건넵니다.\n**~버전**:DANAX의 버전을 알려줍니다.\n**~가위/바위/보**:DANAX와 가위바위보를 합니다.\n**~열대저기압**:현재 활동 중인 열대저기압 정보를 알려줍니다.\n**~주사위**:주사위를 굴립니다.\n**~확률**:확률을 랜덤으로 알려줍니다.(값이 백분율로 나오지 않습니다.)\n**호스팅용 봇은 기능이 제한되어 있습니다. 더 많은 기능은 호스팅용이 아닌 DANAX에서 사용하실 수 있습니다.", color=0x00faf4)
        await client.send_message(message.channel, embed=embed)
 
     
